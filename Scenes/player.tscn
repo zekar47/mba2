@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv4mnd4v88fsf"]
+
+[ext_resource type="Script" path="res://Scripts/player-movement.gd" id="1_p3m1a"]
+[ext_resource type="Texture2D" uid="uid://blf2dkd8hs5pg" path="res://Sprites/Player/player4.svg" id="2_vb2te"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_p3m1a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vb2te")
+
+[node name="DashTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
