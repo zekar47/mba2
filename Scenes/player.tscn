@@ -7,6 +7,8 @@
 script = ExtResource("1_p3m1a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(140, 210)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_vb2te")
 
 [node name="DashTimer" type="Timer" parent="."]
