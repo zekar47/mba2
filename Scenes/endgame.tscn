@@ -6,6 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_hiri6")]
+position = Vector2(1, 0)
 
 [node name="Endgame" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_xepvb")
