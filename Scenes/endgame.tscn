@@ -1,13 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://brykjlakxthgm"]
+[gd_scene load_steps=4 format=3 uid="uid://brykjlakxthgm"]
 
 [ext_resource type="PackedScene" uid="uid://bv4mnd4v88fsf" path="res://Scenes/player.tscn" id="1_hiri6"]
 [ext_resource type="AudioStream" uid="uid://wpkjukduvpku" path="res://Sound/Music/endgame.ogg" id="2_xepvb"]
+[ext_resource type="Texture2D" uid="uid://bo7k2c52rsheq" path="res://Sprites/mrbin.png" id="3_1novd"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(0, -1)
 
 [node name="Player" parent="." instance=ExtResource("1_hiri6")]
-position = Vector2(1, 0)
+position = Vector2(167, 374)
 
 [node name="Endgame" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_xepvb")
+volume_db = -43.697
 autoplay = true
+
+[node name="Mrbin" type="Sprite2D" parent="."]
+position = Vector2(817, 505)
+texture = ExtResource("3_1novd")
+
+[node name="Mrbin2" type="Sprite2D" parent="."]
+position = Vector2(1581, 710)
+texture = ExtResource("3_1novd")
